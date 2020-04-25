@@ -1,0 +1,44 @@
+.footer--principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 20px 20px 20px;
+  background-color: $color-primario;
+  @include media(desktop-s){
+    display: flex;
+    flex-direction: initial;
+    height: 160px;
+  }
+}
+.nav--footer ul {
+  display: block;
+  padding: 10px;
+  @include media(desktop-s){
+    display: flex;
+  }
+  padding-top: 30px;
+  li {
+    list-style: none;
+    margin-right: 50px;
+  }
+  a {
+    color: $color-claro;
+    @include titulos($Fuente2)
+  }
+}
+.nav--social {
+  ul {
+    padding-left: 5px;
+    display: flex;
+    padding-top: 30px;
+  }
+  li {
+    list-style: none;
+    margin-right: 50px;
+    color: $color-claro;
+  }
+  a {
+    color: $color-claro;
+    @include titulos($Fuente2)
+  }
+}
